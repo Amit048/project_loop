@@ -7,7 +7,7 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' }
 });
 
-// ─── Request Interceptor: Attach access token + start the global loader ───────
+// ─── Re quest Interceptor: Attach access token + start the global loader ───────
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('accessToken');
